@@ -1,1 +1,57 @@
-きもと
+import { Card, CardContent } from "@/components/ui/card";
+import { motion } from "framer-motion";
+
+export default function ProfilePage() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-700 text-white flex items-center justify-center p-6">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="max-w-3xl w-full"
+      >
+        <Card className="rounded-2xl shadow-2xl bg-white/10 backdrop-blur-lg border border-white/20">
+          <CardContent className="p-8">
+            <h1 className="text-4xl font-bold mb-4">木元 美桜</h1>
+            <p className="text-lg mb-6 text-gray-200">
+              はじめまして！きもとです。自分らしさを大切にしながら、日々いろんなことに挑戦しています。
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <h2 className="text-2xl font-semibold mb-2">About Me</h2>
+                <p className="text-gray-300">
+                  ・趣味：バスケ、カフェ巡り、映画鑑賞
+                  <br />
+                  ・好きなこと：新しいことに挑戦すること
+                  <br />
+                  ・性格：マイペースで好奇心旺盛
+                </p>
+              </div>
+
+              <div>
+                <h2 className="text-2xl font-semibold mb-2">Skills</h2>
+                <p className="text-gray-300">
+                  ・コミュニケーション
+                  <br />
+                  ・デザイン
+                  <br />
+                  ・チームワーク
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-6">
+              <h2 className="text-2xl font-semibold mb-2">Message</h2>
+              <p className="text-gray-300">
+                このページを見てくれてありがとうございます！
+                これからも自分らしく成長していきたいと思っています。
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+      </motion.div>
+    </div>
+  );
+}
+
