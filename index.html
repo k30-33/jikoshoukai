@@ -3,24 +3,24 @@ import { motion } from "framer-motion";
 
 export default function ProfilePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-sky-400 via-cyan-300 to-blue-500 text-white flex items-center justify-center p-6">
+    <div className="min-h-screen bg-gradient-to-br from-sky-300 via-pink-200 to-white text-white flex items-center justify-center p-6">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         className="max-w-3xl w-full"
       >
-        <Card className="rounded-2xl shadow-2xl bg-white/20 backdrop-blur-lg border border-white/30">
+        <Card className="rounded-2xl shadow-2xl bg-white/40 backdrop-blur-lg border border-pink-200">
           <CardContent className="p-8">
-            <h1 className="text-4xl font-bold mb-4 text-white">木元 美桜</h1>
-            <p className="text-lg mb-6 text-blue-50">
+            <h1 className="text-4xl font-bold mb-4 text-pink-500">木元 美桜</h1>
+            <p className="text-lg mb-6 text-pink-400">
               はじめまして！木元です。自分らしさを大切にしながら、日々いろんなことに挑戦しています。
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <h2 className="text-2xl font-semibold mb-2 text-white">About Me</h2>
-                <p className="text-blue-100">
+                <h2 className="text-2xl font-semibold mb-2 text-sky-500">About Me</h2>
+                <p className="text-gray-600">
                   ・趣味：音楽、カフェ巡り、映画鑑賞
                   <br />
                   ・好きなこと：新しいことに挑戦すること
@@ -30,8 +30,8 @@ export default function ProfilePage() {
               </div>
 
               <div>
-                <h2 className="text-2xl font-semibold mb-2 text-white">Skills</h2>
-                <p className="text-blue-100">
+                <h2 className="text-2xl font-semibold mb-2 text-sky-500">Skills</h2>
+                <p className="text-gray-600">
                   ・コミュニケーション
                   <br />
                   ・デザイン
@@ -42,8 +42,8 @@ export default function ProfilePage() {
             </div>
 
             <div className="mt-6">
-              <h2 className="text-2xl font-semibold mb-2 text-white">Message</h2>
-              <p className="text-blue-100">
+              <h2 className="text-2xl font-semibold mb-2 text-sky-500">Message</h2>
+              <p className="text-gray-600">
                 このページを見てくれてありがとうございます！
                 これからも自分らしく成長していきたいと思っています。
               </p>
